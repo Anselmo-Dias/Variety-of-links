@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+@import 'phosphor-css/css/index.css';
+@import 'phosphor-css/sass/index.scss';
+@import 'phosphor-css/less/index.less';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue-100: #4263EB;
+  --blue-300: #364FC7;
+  --blue-500: #0c0636;
+  --blue-550: #000524;
+
+  --white-pattern: #ffffff;
+
+  --green-100: #53ba83;
+
+  font-size: 62.5%;
+}
+
+body,input,select,textarea {
+  font-family: "Pppins", sans-serif;
+  font-size: 1.6rem;
+  text-align: center;
+ } 
+
+body {
+    width: 100%;
+    height: 100%;
+    background: var(--blue-550);
+    transition: background 0.6s;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+
+/* ========== start =========== */
+
+.wrapper {
+  width: 80%;
+  max-width: 40rem;
+
+  margin-inline: auto;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+section {
+  position: relative;
+  padding: 0 5.6rem 1rem;
+  margin-top: 10rem; 
+  border-radius: 1rem; 
+  background: #ffff;
+
+}
+
+ button {
+  position: absolute; 
+  top: 1rem;
+  right: 1rem;
+  border: none;
+  border-radius: 0.8rem;
+  padding: 1rem;
+  color: #fff;
+   transition: 0.6s;
+}
+
+         
+ button {
+  background-image: linear-gradient(to right, #4263EB 0%, #E5E5BE  51%, #53ba83  100%);
+
+  background-size: 200% auto;     
+}
+
+   button:hover {
+    background-position: right center; 
+  }
+         
+
+  section img {
+  width: 30%;
+  height: 30%;
+  clip-path: circle();
+
+  margin-top: 6.3rem;
+  margin-bottom: 1rem;
+}
+
+
+
+section h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #0c0636;
+
+}
+
+section .paragraph {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 150%;
+  margin-bottom: 5rem;
+  color: #00082FCC;
+
+}
+
+section a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-align: center;
+  padding: 1.6rem 8rem;
+  background: var(--blue-100);
+  border-radius: 0.6rem;
+  margin-bottom: 1.6rem;
+
+  text-transform: uppercase;
+  color: #ffff;
+  transition: 0.6s;
+}
+
+ a:hover {
+  background: var(--blue-300);
+}
+
+/* ========== footer =========== */
+
+
+footer {
+  margin-top: calc(4.8rem - 1.6rem);
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  color: var(--white-pattern);
+}
+
+footer span {
+  color: var(--green-100);
+  transition: color 0.6s;
+}
+
+/* ========== New Style =========== */
+
+
+body.newStyle { 
+  background: #487047;
+}
+
+ button.newStyle {
+  background-image: linear-gradient(to right, #53ba83 0%, #E5E5BE  51%, #4263EB  100%);
+
+  background-size: 200% auto;            
+}
+
+ button.newStyle:hover {
+    background-position: right center; 
+  }
+     
+
+a.newStyle {
+  background-color: #77c277;
+}
+
+footer span.newStyle {
+  color: black;
+}
+
+
+footer.newStyle {
+  background-color: inherit;
+}
+
+
+/* ========== Responsive =========== */
+
+@media (min-width: 320px) {
+  section img {
+    width: 7rem;
+  }
+
+  .wrapper ul li  {
+    font-size: 1.5rem;
+    align-items: center;
+  }
+}
